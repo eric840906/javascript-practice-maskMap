@@ -12498,7 +12498,7 @@ showDay();
       $('#sidebar').toggleClass('active');
   });
 
-})(jQuery);
+});
 
 
 
