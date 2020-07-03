@@ -19,7 +19,7 @@ a{
     width: 100%;
     align-items: stretch;
     #sidebar {
-        background-color: #bfddf7c4;  
+        background-image: linear-gradient(131deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 8%, rgba(91,284,255,-0.705445) 101%);
         width: 372px;        
         min-height: 100vh;
         color: #fff;
@@ -45,6 +45,10 @@ a{
     bottom: 0;
     padding: 10px;
     z-index: 400;
+    .btn-primary{
+        background-image: linear-gradient(250deg, rgba(2,0,36,1) 114%, rgba(9,9,121,1) 8%, rgba(91,284,255,-0.705445) 101%);
+        border-color: black;
+    }
 }
 
 #showDay{
@@ -196,4 +200,39 @@ html,body{
           line-height: 30px;
           }
 
-          
+@media(max-width:425px){
+    .wrapper {
+        display: flex;
+        width: 100%;
+        align-items: stretch;
+        #sidebar {
+            background-color: #bfddf7c4;  
+            width: 100%;        
+            min-height: 100vh;
+            color: #fff;
+            transition: all 0.3s;
+            position: relative;
+            .day-frame{
+                padding: 20px 17px;
+                color: white;
+            }
+            
+            &.active{
+                margin-left: -100%;
+                .custom-menu{
+                  margin-right: -50px;
+                }
+            }    
+        }
+    }
+}
+  
+@media(min-width:375px) and (max-width:425px){
+    .day-frame{
+        padding: 20px 17px;
+        color: white;
+        p{
+            margin-left: 55px;
+        }
+    }
+}
