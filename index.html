@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/jquery3.5.1.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.css"></link> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/MarkerCluster.Default.css"></link>    
+    <script src="https://kit.fontawesome.com/2787c97e68.js" crossorigin="anonymous"></script>
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    
+        
+        <div class="wrapper">
+
+            <!-- Sidebar -->
+            <nav id="sidebar">
+                
+                
+                <div class="clearfix day-frame">
+                    <h2 id="showDay"></h2>
+                    <p id="showDate"></p>
+                    <p id="showCanbuy"></p>
+                </div>
+                <div class="search">
+                    <input type="text" id="locationInput" placeholder="搜尋區域、地址、藥局">
+                    <input type="submit" id="locationSearch" value="搜尋">
+                </div>
+                
+                <div class="container info-container">
+                    <ul class="list-unstyled components pharmacy-list">
+                    <!---->
+                        <li class="pharmacy">
+                            <a href="#" class="pharmacy-info">
+                                <h5 class="pharmacy-name">富山藥局</h3> <button class="pharmacy-location">定位</button>
+                                <h5 class="pharmacy-address">114台北市內湖區麗山街364巷2號</h5>
+                                <p class="pharmacy-phone">02 2799 6446</p>
+                                <p class="pharmacy-open">營業中 9:00~21:00</p>
+                                <div class="mask-counter flex-d">
+                                    <div class="adult-mask-count sold-background counter-item"><span>成人口罩</span><span class="number">123</span></div>
+                                    <div class="child-mask-count sold-background counter-item"><span>兒童口罩</span><span class="number">123</span></div>
+                                </div>
+                                
+                            </a>
+                            
+                        </li>
+                        <li class="pharmacy">
+                            <a href="#" class="pharmacy-info">
+                                <h5 class="pharmacy-name">富山藥局</h3>
+                                <h5 class="pharmacy-address">114台北市內湖區麗山街364巷2號</h5>
+                                <p class="pharmacy-phone">02 2799 6446</p>
+                                <p class="pharmacy-open">營業中 9:00~21:00</p>
+                                <div class="mask-counter flex-d">
+                                    <div class="adult-mask-count sold-background counter-item"><span>成人口罩</span><span class="number">123</span></div>
+                                    <div class="child-mask-count sold-background counter-item"><span>兒童口罩</span><span class="number">123</span></div>
+                                </div>
+                                
+                            </a>
+                            
+                        </li>
+                    <!---->
+                    </ul>
+                </div>
+                
+            </nav>
+        
+            <!-- Page Content -->
+            <div id="content">
+                <div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	                <i class="fa fa-bars"></i>
+	                <span class="sr-only">Toggle Menu</span>
+	                </button>
+                </div>
+                <div id="map"></div>
+                
+            </div>
+            
+        </div>       
+    
+    
+    
+    
+    
+</body>
+ 
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.4.1/leaflet.markercluster.js"></script>
+<script src="js/all.js"></script>
+
+</html>

@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+*{
+    font-family: 'cwTeXYen', sans-serif;
+    :focus {
+        outline: none;
+    }
+}
+a{
+    color: black;
+    &:hover{
+        color: black;
+        text-decoration: none;
+        background-color: transparent;
+
+    }
+}
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    #sidebar {
+        background-color: #bfddf7c4;  
+        width: 372px;        
+        min-height: 100vh;
+        color: #fff;
+        transition: all 0.3s;
+        position: relative;
+        .day-frame{
+            padding: 20px 17px;
+            color: white;
+        }
+        
+        &.active{
+            margin-left: -372px;
+            .custom-menu{
+              margin-right: -50px;
+            }
+        }    
+    }
+}
+
+.custom-menu{
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    padding: 10px;
+    z-index: 400;
+}
+
+#showDay{
+    float: left;
+}
+#showDate{
+    float: right;
+    margin: 0;
+}
+#showCanbuy{
+    float: right;
+    font-size: 12px;
+}
+.search{
+    position: relative;
+    #locationInput{
+        margin-left: 17px;
+        width: 91%;
+        border: 1px solid white;
+        border-radius: 35px;
+        padding-right: 50px;
+        &:focus{
+            margin-left: 17px;
+            
+        }
+    }
+    #locationSearch{
+        position: absolute;
+        width: 50px;
+        background-color: white;
+        border-width: thin;
+        border: 1px solid white;
+        border-radius: 35px;
+        margin-left: -50px;
+        
+    }
+    
+}
+
+.info-container{
+    overflow-y: scroll;
+    height: 500px;
+    margin-top: 20px;
+    background-color: white;
+    display: none;
+}
+.pharmacy{
+    position: relative;
+    padding: 10px 0;
+    .pharmacy-info{
+        .pharmacy-name{
+            font-size: 16px;
+        }
+        .pharmacy-location{
+            position: absolute;            
+            right: 0;
+            top: 12px;
+            border-width: thin;
+            border-radius: 22px;
+            border: 1px solid white;
+            background-color: white;
+            &:hover{
+                background-color:#bfddf7c4;
+                color: white;
+            }
+            &:focus{
+                outline: none;
+            }
+        }
+        .pharmacy-address{
+            color: #8a8484;
+    
+            font-size: 15px;
+        }
+        .pharmacy-phone{
+            margin-bottom: 0;
+        }
+        p{
+            color: #8a8484;
+    
+        }
+        .mask-counter{
+            text-align: center;
+            justify-content: space-between;
+            .adult-mask-count{
+                background-color:  #bfddf7c4;;
+            }
+            .child-mask-count{
+                background-color: #ffa671;
+            }
+            .counter-item{
+                font-weight: bolder;
+                color: white;
+                margin: 7px;
+                padding: 6px;
+                display: inline-block;
+                border: 1px solid white;
+                width: 45%;
+                text-align: initial;
+                border-radius: 23px;
+            }
+        }
+    }
+}
+
+
+html,body{
+    width: 100%;
+    height: 100%;
+  }
+  #map { width: 100%;height: 100%;     position: fixed;
+  }
+  .marker-cluster-small {
+          background-color: rgba(181, 226, 140, 0.6);
+          }
+      .marker-cluster-small div {
+          background-color: rgba(110, 204, 57, 0.6);
+          }
+  
+      .marker-cluster-medium {
+          background-color: rgba(241, 211, 87, 0.6);
+          }
+      .marker-cluster-medium div {
+          background-color: rgba(240, 194, 12, 0.6);
+          }
+  
+      .marker-cluster-large {
+          background-color: rgba(253, 156, 115, 0.6);
+          }
+      .marker-cluster-large div {
+          background-color: rgba(241, 128, 23, 0.6);
+          }
+  
+      .marker-cluster {
+          background-clip: padding-box;
+          border-radius: 20px;
+          }
+      .marker-cluster div {
+          width: 30px;
+          height: 30px;
+          margin-left: 5px;
+          margin-top: 5px;
+  
+          text-align: center;
+          border-radius: 15px;
+          font: 12px "Helvetica Neue", Arial, Helvetica, sans-serif;
+          }
+      .marker-cluster span {
+          line-height: 30px;
+          }
+
+          
