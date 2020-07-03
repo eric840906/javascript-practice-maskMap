@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ;(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -6269,7 +6269,7 @@ function showMarkers(e){
 
 //sidebar
 
-=======
+
 ;(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -12540,4 +12540,4 @@ function showMarkers(e){
 
 //sidebar
 
->>>>>>> 8998fb5ba6473447751be020571102e3928e7ec9
+
