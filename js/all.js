@@ -6070,7 +6070,8 @@ xhr.onload=function(e){
     for(i=0;i<maskInfo.features.length;i++){
         var pharmacyCoordinate = maskInfo.features[i].geometry.coordinates;
         markers.addLayer(L.marker([pharmacyCoordinate[1],pharmacyCoordinate[0]]).bindPopup(maskInfo.features[i].
-        properties.name+"<br>大人口罩數量"+maskInfo.features[i].properties.mask_adult+"<br>兒童口罩數量"+maskInfo.features[i].properties.mask_child));
+        properties.name+"<br>大人口罩數量:"+maskInfo.features[i].properties.mask_adult+"<br>兒童口罩數量:"+maskInfo.features[i].properties.mask_child+"<br>電話:"+maskInfo.features[i].properties.phone+
+        "<br>地址:"+maskInfo.features[i].properties.address));
     }
     map.addLayer(markers);
 }
@@ -6139,6 +6140,7 @@ function showDay(){
 
 
 function search(e){
+    
     var searchItem = document.getElementById('locationInput').value;
     
     
@@ -6195,6 +6197,7 @@ document.querySelector('.info-container').addEventListener('click',function(e){
     
     if(e.target.nodeName=="BUTTON"){            
         //console.log(maskInfo.features[location].geometry.coordinates);
+        document.getElementById('sidebar').classList.add("active");
         map.flyTo([maskInfo.features[location].geometry.coordinates[1], maskInfo.features[location].geometry.coordinates[0]], 18);
             
         
